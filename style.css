@@ -117,8 +117,7 @@ input, button {
   margin: 0;
 }
 .tabs_wrapper {
-  min-width: 600px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
 }
@@ -192,9 +191,17 @@ input, button {
   border: 3px solid #1241ec;
   border-top: none;
 }
-
+.content__wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 .gpu {
+  min-width: 300px;
   max-width: 400px;
+  border: 2px solid #1241ec;
+  padding: 20px;
+  overflow: hidden;
 }
 .gpu .tabs ul {
   max-width: 400px;
@@ -206,86 +213,24 @@ input, button {
   font-family: "ProximaNovaRegular";
   text-align: left;
 }
-.gpu section {
-  padding: 20px;
-  border: 1px solid #1241ec;
-}
 .gpu_img {
   display: block;
   margin: 0 auto;
 }
-
-.tabs > ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0;
-}
-.tabs > ul .indicator {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 3px;
-  width: 20%;
-  transform: translateZ(0) translateX(0);
-  transition: all 0.3s ease;
-}
-.tabs > ul li {
-  display: inline-block;
-  font-size: 1.3rem;
-  width: 33.335%;
-}
-.tabs > ul li a {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  padding: 10px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  color: black;
-
-  transition: all 0.3s ease 0.4s;
-}
-.tabs > ul li a:before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background: #1241ec;
-  transform: translateZ(0) translateY(100%);
-  transition: all 0.3s ease 0.3s;
-  z-index: -1;
-}
-.tabs > ul li a[aria-selected] {
-  color: white;
-}
-.tabs > ul li a[aria-selected]:before {
-  transform: translateZ(0) translateY(0);
-}
-.tabs > section[aria-hidden="true"] {
-  display: none;
-}
-
 .progress-bar {
     background-color: #f4f4f4;
     height: 100%;
     width: 100%;
     margin: 10px 0;
 }
-
 .progress-bar span {
     display: inline-block;
-    height: 100%;
+    max-height: 100%;
     transition: width .4s ease-in-out;
     color: #fff;
     padding: 10px;
     font-family: "ProximaNovaRegular";
+    font-size: 1rem;
 }
 .blue span:first-child {
     background-color: #1241ec;
@@ -296,7 +241,6 @@ input, button {
 .shine span {
     position: relative;
 }
-
 .shine span::after {
     content: '';
     opacity: 0;
@@ -308,14 +252,12 @@ input, button {
     background: #fff;
     animation: animate-shine 2s ease-out infinite;
 }
-
 @keyframes animate-shine {
     0% {opacity: 0; width: 0;}
     50% {opacity: .5;}
     100% {opacity: 0; width: 95%;}
 }
-
-.earn, .order_btn {
+.earn, .cost_btn {
   cursor: pointer;
   outline: none;
   border: 2px solid #1241ec;
@@ -323,31 +265,86 @@ input, button {
   font-size: 1rem;
   color: #000;
   font-family: "ProximaNovaRegular";
-  padding: 10px;
+  padding: 8px;
 }
 .earn:hover {
   background-color: #1241ec;
   color: #fff;
   transition: 0.3s;
 }
-.cost {
+.cost, .earn {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .cost__h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "ProximaNovaThin";
 }
 .cost__h3 .blue_span {
   font-family: "ProximaNovaRegular";
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
-.order_btn {
+.cost_btn {
   background-color: #1241ec;
   color: #fff;
-  padding: 7px 20px;
+  padding: 7px 15px;
 }
-.order_btn:hover {
+.cost_btn:hover {
   background-color: #fff;
   color: #1241ec;
+  transition: 0.3s;
+}
+.tabin {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "ProximaNovaRegular";
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+.tabsin {
+  display: table;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+.tabsin li {
+  float: left;
+  line-height: 38px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+.tabsin a {
+  background-color: #eff0f2;
+  border-bottom: 1px solid #fff;
+  color: #888;
+  font-weight: 500;
+  display: block;
+  letter-spacing: 0;
+  outline: none;
+  padding: 0 20px;
+  text-decoration: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  border-bottom: 2px solid blue;
+}
+.tabs_item {
+  display: none;
+  padding: 30px 0;
+}
+.tabs_item h4 {
+font-family: "ProximaNovaRegular";  color: blue;
+}
+.tabs_item:first-child {
+  display: block;
+}
+.current a {
+  color: #fff;
+  background: blue;
 }
