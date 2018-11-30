@@ -356,7 +356,7 @@ input, button {
   padding: 30px 0;
 }
 .tabs_item h4 {
-font-family: "ProximaNovaRegular";  color: blue;
+  font-family: "ProximaNovaRegular";  color: blue;
 }
 .tabs_item:first-child {
   display: block;
@@ -390,8 +390,6 @@ font-family: "ProximaNovaRegular";  color: blue;
   align-items: center;
   flex-direction: column;
 }
-
-
 .swiper-button-next,
 .swiper-button-prev {
   top: 35% !important;
@@ -407,6 +405,9 @@ font-family: "ProximaNovaRegular";  color: blue;
 }
 .step_img {
   max-width: 80%;
+}
+.step_h3 {
+  padding: 0 10px;
 }
 .step-num {
   background: rgb(255,120,16);
@@ -436,15 +437,13 @@ font-family: "ProximaNovaRegular";  color: blue;
     display: none;
   }
 }
-@media only screen and (max-width: 813px) {
-
-}
 @media only screen and (max-width: 800px) {
   .br {
     display: block;
   }
   .gpu {
     border: none;
+    margin-top: 10px;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -457,6 +456,9 @@ font-family: "ProximaNovaRegular";  color: blue;
   .order_btn {
     font-size: 1.7rem;
     padding: 10px 15px;
+  }
+  .title_section {
+    font-size: 2.4rem;
   }
 }
 @media only screen and (max-width: 350px) {
