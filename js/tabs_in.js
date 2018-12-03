@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
 	(function ($) {
 		$('.tabin ul.tabsin').addClass('active').find('> li:eq(0)').addClass('current');
 
@@ -26,7 +27,7 @@ var swiper = new Swiper('.swiper_desktop', {
       loop: true,
       loopFillGroupWithBlank: true,
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-paginationn',
         clickable: true,
       },
       navigation: {
@@ -39,7 +40,7 @@ var swiper = new Swiper('.swiper_desktop', {
      effect: 'flip',
      grabCursor: true,
      pagination: {
-       el: '.swiper-pagination',
+       el: '.swiper-paginationn',
      },
      navigation: {
        nextEl: '.swiper-button-next',
