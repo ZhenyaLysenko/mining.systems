@@ -37,7 +37,7 @@ input, button {
    margin: 0 auto;
 }
 .banner {
-  background-image: url(images/mining_farm.jpg);
+  background-image: url(images/main/mining_farm.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
