@@ -197,9 +197,13 @@
   margin: 0 20px;
   padding: 0 60px;
   border: 2px solid #1241ec;
-  border-radius: 25px;
   color: #000;
   font-family: "ProximaNovaRegular";
+  display: inline-block;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -khtml-border-radius: 30px;
 }
 .owl-prev span:hover, .owl-next span:hover {
   color: #fff;
