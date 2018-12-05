@@ -361,7 +361,8 @@ input, button {
   padding: 30px 0;
 }
 .tabs_item h4 {
-  font-family: "ProximaNovaRegular";  color: blue;
+  font-family: "ProximaNovaRegular";
+  color: blue;
 }
 .tabs_item:first-child {
   display: block;
@@ -488,9 +489,8 @@ input, button {
 .whatIncludeItem__desc {
   margin: 20px 0;
 }
-
 .excavo {
-  background: url(images/excavo.png) no-repeat 0 0;
+  background: url(images/main/excavo.png) no-repeat 0 0;
   background-size: 250px;
   width: 100%;
   margin: 0;
@@ -501,7 +501,7 @@ input, button {
 }
 @-webkit-keyframes slide {
     from { background-position: 90% 30px; }
-    to { background-position: 10% 30px; }
+    to { background-position: -20% 30px; }
 }
 .excavo:hover {
     animation-play-state: paused;
@@ -515,6 +515,23 @@ input, button {
 .excavo__h3 i {
   color: green;
   font-size: 3rem;
+}
+.farm {
+  background-image: url(images/main/farm.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  max-width: 100%;
+  color: #fff;
+  background-color: rgba(0,0,0,0.8);
+  background-blend-mode: darken;
+  text-align: center;
+  overflow: hidden;
+  padding: 70px 0;
+}
+.farm .order_btn {
+  margin-top: 40px;
 }
 
 
@@ -579,12 +596,16 @@ input, button {
   .whatIncludeItem__img,
   .owl-carousel .owl-item img {
     width: 100% !important;
+    height: 140px !important;
   }
   .whatIncludeItem__title {
     font-size: 0.9rem;
   }
   .whatIncludeItem__desc {
     font-size: 0.9rem;
+  }
+  .farm .order_btn {
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 350px) {
