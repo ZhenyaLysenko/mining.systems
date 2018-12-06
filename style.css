@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'ProximaNovaThin';
-  background-color: #f4f4f4;
   color: #474747;
 }
 a {
@@ -120,6 +119,10 @@ input, button {
 }
 .whatWeOrdered, .steps {
   overflow: hidden;
+}
+.bgFor {
+  background-image: url(https://static.tildacdn.com/tild3163-3961-4765-a631-363531336430/circle.png);
+  background-repeat: no-repeat;
 }
 .whatWeOrder__title {
   text-align: center;
@@ -503,9 +506,9 @@ input, button {
     from { background-position: 90% 30px; }
     to { background-position: -20% 30px; }
 }
-.excavo:hover {
+/* .excavo:hover {
     animation-play-state: paused;
-}
+} */
 .excavo__h3 {
   font-family: "ProximaNovaRegular";
   font-size: 2.5rem;
