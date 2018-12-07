@@ -30,6 +30,47 @@ input, button {
   font-family: "ProximaNovaItalicThin";
   src: url(fonts/Proxima-Nova-Thin-It.ttf);
 }
+#return-to-top {
+    z-index: 99;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
 .inner {
    max-width: 1200px;
    overflow: hidden;
@@ -570,6 +611,9 @@ input, button {
   position: relative;
   min-height: 550px;
 }
+.pack .step-num {
+  font-size: 24px;
+}
 .pack_absolute {
   position: absolute;
   bottom: 0;
@@ -595,11 +639,11 @@ input, button {
 .pack_ul span {
   padding-left: 10px;
 }
-.check_li, .cancell_li {
+.check_li {
   font-size: 18px;
   margin-bottom: 15px;
 }
-.check_li:before, .cancell_li:before {
+.check_li:before {
   content: '';
   display: inline-block;
   height: 20px;
@@ -609,9 +653,6 @@ input, button {
   background-repeat: no-repeat;
   margin-left: -30px;
   margin-bottom: -3px;
-}
-.cancell_li:before {
-  background-image: url('images/packs/cancell.png');
 }
 .pack_price {
   text-align: center;
@@ -623,6 +664,8 @@ input, button {
   padding: 10px 30px;
   font-size: 1.3rem;
 }
+
+
 
 
 
@@ -639,7 +682,6 @@ input, button {
   .pack {
     margin: 30px auto;
     max-width: 400px;
-    position: static;
     min-height: auto;
   }
   .pack_absolute {
@@ -653,7 +695,6 @@ input, button {
   .swiper_desktop {
     display: none;
   }
-
 }
 @media only screen and (max-width: 800px) {
   .br {
