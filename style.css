@@ -120,6 +120,15 @@ input, button {
 .whatWeOrdered, .steps {
   overflow: hidden;
 }
+.steps, .whatInclude, .packets {
+  background-color: #f4f4f4;
+}
+.whatWeOrdered__phrase {
+  font-size: 1.7rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 30px auto;
+}
 .bgFor {
   background-image: url(https://static.tildacdn.com/tild3163-3961-4765-a631-363531336430/circle.png);
   background-repeat: no-repeat;
@@ -474,7 +483,6 @@ input, button {
   -webkit-box-shadow: 0px 0px 10px 1px rgba(237,234,237,1);
   -moz-box-shadow: 0px 0px 10px 1px rgba(237,234,237,1);
   box-shadow: 0px 0px 10px 1px rgba(237,234,237,1);
-  border-radius: 20px;
 }
 .whatIncludeItem__img,
 .owl-carousel .owl-item img {
@@ -493,6 +501,7 @@ input, button {
   margin: 20px 0;
 }
 .excavo {
+  padding-top: 30px;
   background: url(images/main/excavo.png) no-repeat 0 0;
   background-size: 250px;
   width: 100%;
@@ -546,7 +555,66 @@ input, button {
   flex: 1 0 30%;
   padding: 10px;
 }
-
+.packs {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-around;
+}
+.pack {
+  margin: 0 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #1241ec;
+  max-width: 350px;
+  font-family: "ProximaNovaRegular";
+}
+.pack_h2 {
+  text-align: center;
+}
+.pack_img {
+  max-width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+.pack .blue_border {
+  width: 35px;
+  height: 4px;
+}
+.pack_ul {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.pack_ul span {
+  padding-left: 10px;
+}
+.check_li, .cancell_li {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.check_li:before, .cancell_li:before {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url('images/packs/check.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: -30px;
+  margin-bottom: -3px;
+}
+.cancell_li:before {
+  background-image: url('images/packs/cancell.png');
+}
+.pack_price {
+  text-align: center;
+  font-size: 1.4rem;
+}
+.pack .cost_btn {
+  margin: 30px auto;
+  display: block;
+  padding: 10px 30px;
+  font-size: 1.3rem;
+}
 
 
 @media only screen and (max-width: 1000px) {
@@ -555,6 +623,13 @@ input, button {
   }
   .owl-carousel .owl-item.center {
     margin: 0;
+  }
+  .packs {
+    display: block;
+  }
+  .pack {
+    margin: 30px auto;
+    max-width: 400px;
   }
 }
 @media only screen and (max-width: 950px) {
@@ -620,6 +695,9 @@ input, button {
   .farm .order_btn {
     margin-top: 20px;
   }
+  .pack {
+    margin: 40px 20px;
+  }
 }
 @media only screen and (max-width: 350px) {
   .gpu {
@@ -627,5 +705,8 @@ input, button {
   }
   .tab__content > li .content__wrapper {
     border: none;
+  }
+  .whatWeOrdered__phrase {
+    display: none;
   }
 }
