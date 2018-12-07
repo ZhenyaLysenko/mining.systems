@@ -567,6 +567,14 @@ input, button {
   border: 2px solid #1241ec;
   max-width: 350px;
   font-family: "ProximaNovaRegular";
+  position: relative;
+  min-height: 550px;
+}
+.pack_absolute {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .pack_h2 {
   text-align: center;
@@ -617,6 +625,7 @@ input, button {
 }
 
 
+
 @media only screen and (max-width: 1000px) {
   .whatIncludeItem {
     margin: 0 auto;
@@ -630,6 +639,11 @@ input, button {
   .pack {
     margin: 30px auto;
     max-width: 400px;
+    position: static;
+    min-height: auto;
+  }
+  .pack_absolute {
+    position: static;
   }
 }
 @media only screen and (max-width: 950px) {
