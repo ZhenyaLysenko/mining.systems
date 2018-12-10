@@ -569,7 +569,7 @@ input, button {
   color: green;
   font-size: 3rem;
 }
-.farm {
+.farm, .partners {
   background-image: url(images/main/farm.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -664,8 +664,106 @@ input, button {
   padding: 10px 30px;
   font-size: 1.3rem;
 }
-
-
+.reviews .blue_border {
+  margin-bottom: 40px;
+}
+.reviews .whatWeOrdered__phrase {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 0 100px;
+  text-align: right;
+}
+.partners {
+  background-image: url(images/main/partners.jpg);
+}
+.partners .title_section {
+  margin-top: 0;
+}
+/* .footer {
+  background-image: url(https://static.tildacdn.com/tild3163-3961-4765-a631-363531336430/circle.png);
+  background-repeat: no-repeat;
+  background-position: 110% 5%;
+  background-size: contain;
+} */
+.footer {
+  min-height: 300px;
+  display: flex;
+  margin-top: 30px;
+}
+.footer_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex: 0 0 25%;
+  max-width: 25%;
+  min-height: 100%;
+  padding: 40px;
+  background-color: #141414;
+  color: #fff;
+}
+.footer_left .order_btn {
+  margin: 25px auto;
+  display: block;
+  font-size: 1.4rem;
+}
+.footer__p {
+  font-family: 'ProximaNovaItalicThin';
+  text-align: center;
+  margin: 0;
+}
+.footer_left .logo {
+  font-size: 7rem;
+  text-align: center;
+}
+.footer_right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 0 0 60%;
+  max-width: 60%;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-left: 40px;
+}
+.footer_right .blue_border {
+  margin: 0;
+}
+.footer_right .socialIcon {
+  margin-left: 0;
+}
+.footer_right .socialIcon:hover {
+  border: 1px solid #000;
+}
+.footer_right .title_section {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+.contacts h6 {
+  font-size: 1.1rem;
+  margin: 20px 0;
+  font-family: "ProximaNovaRegular";
+}
+.contacts h6:last-child {
+  margin-bottom: 0;
+}
+.contacts h6 a {
+  color: #474747;
+}
+.contacts h6 a:hover {
+  color: #1241ec;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.copyright {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-transform: uppercase;
+  font-family: "ProximaNovaRegular";
+  text-align: right;
+}
 
 
 
@@ -706,6 +804,28 @@ input, button {
   }
   .border {
     display: block;
+  }
+  .reviews .blue_border {
+    margin-bottom: 10px;
+  }
+  .reviews .whatWeOrdered__phrase {
+    display: none;
+  }
+  .footer {
+    display: block;
+  }
+  .footer_left, .footer_right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .footer_left .logo {
+    font-size: 5rem;
+  }
+  .footer_right .title_section {
+    margin-top: 20px;
+  }
+  .copyright {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 450px) {

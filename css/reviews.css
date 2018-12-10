@@ -381,10 +381,10 @@ font-family: 'ProximaNovaRegular';}
     font-size: 40px;
 font-family: 'ProximaNovaThin';    letter-spacing: 2px;
     padding-bottom: 30px;}
-	.sec-eight-text-area p{padding: 2vh 0;font-size: 14px;line-height: 1.6;color: #434C57;font-family: 'ProximaNovaThin';}
-	.section-eight .container-pe-quote {position: absolute;height: 100%;top: 0px;z-index: 1;}
+	.sec-eight-text-area p{padding: 2vh 20px;font-size: 14px;line-height: 1.6;color: #434C57;font-family: 'ProximaNovaRegular';}
+	.section-eight .container-pe-quote {position: absolute;height: 100%;top: -87px;z-index: 1;}
 	.section-eight .container-pe-quote.left {left: 0px;}
-	.section-eight .container-pe-quote.right {right: 0px;}
+	.section-eight .container-pe-quote.right {right: 50px;}
 	.section-eight .container-pe-quote .pp-quote {
 	    cursor: pointer;
 	    position: absolute;
@@ -571,6 +571,7 @@ font-family: 'ProximaNovaThin';    letter-spacing: 2px;
 
 .section-eight .container-quote {
     position: relative;
+    padding-bottom: 30px;
     width: 100%;
     margin-top: 10px;
     height: 135px;
