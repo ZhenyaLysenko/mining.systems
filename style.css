@@ -721,11 +721,13 @@ input, button {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex: 0 0 60%;
-  max-width: 60%;
+  flex: 0 0 59%;
+  max-width: 100%;
   align-items: flex-start;
   align-content: flex-start;
   padding-left: 40px;
+  border-top: 8px solid #1241ec;
+  position: relative;
 }
 .footer_right .blue_border {
   margin: 0;
@@ -764,6 +766,23 @@ input, button {
   font-family: "ProximaNovaRegular";
   text-align: right;
 }
+.icons {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+.cryptoAnim {
+  padding: 0 10px;
+  font-size: 100px;
+  color: #00267b;
+  animation: slideout 2s infinite;
+}
+@keyframes slideout {
+  0% { transform: rotate(25deg); }
+  50% { transform: rotate(-25deg); }
+  100% { transform: rotate(25deg); }
+}
+
 
 
 
@@ -873,6 +892,9 @@ input, button {
   .pack {
     margin: 40px 20px;
   }
+  .icons i.fa-ethereum {display: none;}
+  .cryptoAnim {font-size: 70px;}
+  .icons {bottom: 70px;}
 }
 @media only screen and (max-width: 350px) {
   .gpu {
