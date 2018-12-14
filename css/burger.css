@@ -1,16 +1,15 @@
 .navBurger {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 10px;
+  top: 10px;
 }
 #menuToggle {
   display: none;
   position: relative;
-  top: 20px;
-  right: 30px;
   z-index: 50;
   -webkit-user-select: none;
   user-select: none;
+  padding: 10px;
 }
 #menuToggle a {
   text-decoration: none;
