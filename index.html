@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/owl.css"/>
     <link rel="stylesheet" href="css/reviews.css"/>
+    <link rel="stylesheet" href="css/burger.css"/>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
@@ -22,6 +24,65 @@
 
   <body>
     <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <nav class="navigation anchor">
+      <div class="inner">
+        <h2 class="logo">M<span class="blue_span">S</span></h2>
+        <navbar class="navbarUl">
+          <ul class="ulnav">
+            <a href="#order">
+              <li>Мы Предлагаем</li>
+            </a>
+            <a href="#steps">
+              <li>Этапы работы</li>
+            </a>
+            <a href="#whatInclude">
+              <li>Услуги</li>
+            </a>
+            <a href="#packets">
+              <li>Обслуживание</li>
+            </a>
+            <a href="#reviews">
+              <li>Отзывы</li>
+            </a>
+            <a href="#contacts">
+              <li>Контакты</li>
+            </a>
+          </ul>
+          <nav class="navBurger anchor" role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="#order">
+                  <li>Мы Предлагаем</li>
+                </a>
+                <a href="#steps">
+                  <li>Этапы работы</li>
+                </a>
+                <a href="#whatInclude">
+                  <li>Услуги</li>
+                </a>
+                <a href="#packets">
+                  <li>Обслуживание</li>
+                </a>
+                <a href="#reviews">
+                  <li>Отзывы</li>
+                </a>
+                <a href="#contacts">
+                  <li>Контакты</li>
+                </a>
+              </ul>
+            </div>
+          </nav>
+        </navbar>
+
+      </div>
+    </nav>
+
+
 
     <section class="banner">
       <h2 class="logo">M<span class="blue_span">S</span></h2>
@@ -49,7 +110,7 @@
       </div>
     </section>
 
-    <section class="whatWeOrdered bgFor">
+    <section class="whatWeOrdered bgFor" id="order">
       <h1 class="title_section">Что <span class="blue_span">мы</span> предлагаем?</h1>
       <div class="blue_border"></div>
       <h2 class="whatWeOrder__title">Майнинг на базе <span class="blue_span">видеокарт</span> AMD и Nvidia</h2>
@@ -556,7 +617,7 @@
         <p class="whatWeOrdered__phrase">Выберите самую подходящую для Вас майнинг ферму или просто посоветуйтесь с нами</p>
     </section>
 
-    <section class="steps">
+    <section class="steps" id="steps">
       <div class="inner">
         <h1 class="title_section">Как проходит <span class="blue_span">наше</span> сотрудничество?</h1>
         <div class="blue_border"></div>
@@ -666,7 +727,7 @@
       </div>
     </section>
 
-    <section class="whatInclude">
+    <section class="whatInclude" id="whatInclude">
       <div class="inner">
         <h1 class="title_section">Что <span class="blue_span">входит</span> в стоимость?</h1>
         <div class="blue_border"></div>
@@ -853,7 +914,7 @@
       </div>
     </section>
 
-    <section class="packets">
+    <section class="packets" id="packets">
       <div class="inner">
         <h1 class="title_section">Также предлагаем Вам <span class="blue_span">пакеты</span> обслуживания</h1>
         <div class="blue_border"></div>
@@ -922,7 +983,7 @@
       </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
       <div class="inner">
         <h1 class="title_section">Что люди <span class="blue_span">говорят</span> о нас</h1>
         <div class="blue_border"></div>
@@ -1076,7 +1137,7 @@
 
 
 
-    <footer>
+    <footer id="contacts">
       <section class="footer">
         <div class="footer_left">
           <h2 class="logo">M<span class="blue_span">S</span></h2>
@@ -1126,11 +1187,11 @@
                 </a>
             </div>
           </div>
+
         <div class="icons">
           <i class="fab fa-bitcoin cryptoAnim"></i>
           <i class="fab fa-ethereum cryptoAnim"></i>
         </div>
-
         </div>
       </section>
     </footer>
@@ -1141,7 +1202,6 @@
       </div>
     </section>
 
-
     <script src="js/slider/owl.js"></script>
     <script src="js/slider/swiper.min.js"></script>
     <script src="js/tab/tabs.js"></script>
@@ -1149,5 +1209,6 @@
     <script src="js/bg.js"></script>
     <script src="js/top.js"></script>
     <script src="js/reviews.js"></script>
+    <script src="js/nav.js"></script>
   </body>
 </html>

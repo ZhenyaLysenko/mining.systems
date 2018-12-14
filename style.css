@@ -71,6 +71,38 @@ input, button {
     color: #fff;
     top: 5px;
 }
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #2b2929;
+}
+.navigation .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigation .logo {
+  font-size: 3rem;
+  z-index: 99;
+}
+.ulnav {
+  list-style: none;
+}
+.ulnav li {
+  display: inline-block;
+}
+.ulnav a {
+  font-family: "ProximaNovaRegular";
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 1rem;
+}
+.ulnav a:hover {
+  color: #1241ec;
+  transition: 0.7s;
+}
 .inner {
    max-width: 1200px;
    overflow: hidden;
@@ -88,7 +120,7 @@ input, button {
   background-blend-mode: darken;
   text-align: center;
   overflow: hidden;
-  padding: 70px 0;
+  padding: 100px 0;
 }
 .title {
   margin: 0;
@@ -99,6 +131,7 @@ input, button {
   margin: 0;
   padding: 0;
   font-size: 10rem;
+  color: #fff;
   font-family: 'Black Ops One', cursive;
   font-weight: 400;
   -moz-user-select: none;
@@ -696,7 +729,7 @@ input, button {
   align-items: center;
   align-content: center;
   justify-content: center;
-  flex: 0 0 25%;
+  flex: 0 0 20%;
   max-width: 25%;
   min-height: 100%;
   padding: 40px;
@@ -721,12 +754,12 @@ input, button {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  flex: 0 0 59%;
+  flex: 0 0 62%;
   max-width: 100%;
   align-items: flex-start;
   align-content: flex-start;
   padding-left: 40px;
-  border-top: 8px solid #1241ec;
+  border-top: 7px solid #1241ec;
   position: relative;
 }
 .footer_right .blue_border {
@@ -761,7 +794,7 @@ input, button {
 }
 .copyright {
   background-color: #f4f4f4;
-  padding: 20px;
+  padding: 15px;
   text-transform: uppercase;
   font-family: "ProximaNovaRegular";
   text-align: right;
@@ -782,10 +815,16 @@ input, button {
   50% { transform: rotate(-25deg); }
   100% { transform: rotate(25deg); }
 }
-
-
-
-
+@media only screen and (max-width: 1250px) {
+  .navigation .inner {
+    margin: 0 30px;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .footer_left .order_btn {
+    font-size: 1rem;
+  }
+}
 @media only screen and (max-width: 1000px) {
   .whatIncludeItem {
     margin: 0 auto;
@@ -842,6 +881,9 @@ input, button {
   }
   .footer_right .title_section {
     margin-top: 20px;
+  }
+  .footer_left .order_btn {
+    font-size: 1.4rem;
   }
   .copyright {
     text-align: center;
