@@ -72,6 +72,7 @@
    width: 300px;
    margin: -100px 0 0 500px;
    padding: 70px;
+   padding-bottom: 20px;
    padding-top: 125px;
    background: #2b2929;
    list-style-type: none;
@@ -87,6 +88,20 @@
  #menuToggle input:checked ~ ul {
    transform: translate(-200%, 0);
  }
+ .title_burger {
+   font-size: 2rem;
+   color: #fff;
+   margin: 20px 0;
+ }
+ .social_burger .socialIcon {
+   margin: 0 5px;
+ }
+ .social_burger .socialIcon:first-child {
+   margin-left: 0;
+ }
+ .social_burger .flexIcons {
+   justify-content: flex-start;
+ }
  @media only screen and (max-width: 1000px) {
    #menuToggle {
      display: block;
@@ -96,7 +111,7 @@
    }
    .header_btn {
      margin-right: 50px;
-     padding: 5px 8px;
+     padding: 5px 3px;
    }
  }
  @media only screen and (max-width: 400px) {
