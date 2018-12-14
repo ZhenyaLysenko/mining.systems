@@ -87,12 +87,16 @@
  #menuToggle input:checked ~ ul {
    transform: translate(-200%, 0);
  }
- @media only screen and (max-width: 900px) {
+ @media only screen and (max-width: 1000px) {
    #menuToggle {
      display: block;
    }
    .ulnav {
      display: none;
+   }
+   .header_btn {
+     margin-right: 50px;
+     padding: 5px 8px;
    }
  }
  @media only screen and (max-width: 400px) {

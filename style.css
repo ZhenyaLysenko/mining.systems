@@ -103,6 +103,24 @@ input, button {
   color: #1241ec;
   transition: 0.7s;
 }
+.header_flex {
+  display: flex;
+  align-items: center;
+}
+.header_btn {
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #1241ec;
+  background-color: #1241ec;
+  font-size: 0.9rem;
+  color: #fff;
+  font-family: "ProximaNovaRegular";
+  padding: 8px;
+}
+.header_btn:hover {
+  background: none;
+  transition: 0.5s;
+}
 .inner {
    max-width: 1200px;
    overflow: hidden;
