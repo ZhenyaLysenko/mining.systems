@@ -88,6 +88,8 @@ input, button {
 }
 .navigation .logo {
   font-size: 3rem;
+}
+.navigation > .inner > .z-index {
   z-index: 99;
 }
 .ulnav {
@@ -417,7 +419,7 @@ input, button {
 .cost_btn {
   background-color: #1241ec;
   color: #fff;
-  padding: 7px 8px;
+  padding: 7px 5px;
 }
 .cost_btn:hover {
   background-color: #fff;

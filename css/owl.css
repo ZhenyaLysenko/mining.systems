@@ -213,7 +213,7 @@
 
 @media only screen and (max-width: 360px) {
   .owl-prev span, .owl-next span {
-    font-size: 1.8rem;
-    padding: 0 50px;
+    font-size: 1.3rem;
+    padding: 5px 40px;
   }
 }
