@@ -71,6 +71,9 @@ input, button {
     color: #fff;
     top: 5px;
 }
+.approximately {
+  font-size: 1.5rem;
+}
 .navigation {
   position: fixed;
   top: 0;
@@ -414,7 +417,7 @@ input, button {
 .cost_btn {
   background-color: #1241ec;
   color: #fff;
-  padding: 7px 15px;
+  padding: 7px 8px;
 }
 .cost_btn:hover {
   background-color: #fff;

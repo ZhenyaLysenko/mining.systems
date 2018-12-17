@@ -19,3 +19,5 @@ $('.owl-carousel').owlCarousel({
       }
   }
 });
+$(".owl-prev span").html("<i></i>").addClass("fas fa-long-arrow-alt-left");
+$(".owl-next span").html("<i></i>").addClass("fas fa-long-arrow-alt-right");;
