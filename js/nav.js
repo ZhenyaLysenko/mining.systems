@@ -3,7 +3,7 @@ $(document).ready(function(){
    event.preventDefault();
    var id  = $(this).attr('href'),
    top = $(id).offset().top - 50 + 'px';
-   $('body,html').animate({scrollTop: top}, 1000);
+   $('body,html').animate({scrollTop: top}, 700);
 
  });
   $('#menu a').click(function() {
